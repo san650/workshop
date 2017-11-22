@@ -14,10 +14,6 @@ function loadRoutes(app) {
 		});
 	});
 
-	app.post('/session', function(req, res) {
-		res.send('12345');
-	});
-
 	app.use('/issues', require('./issue'));
 
   // FIXME: Test to enable only on test.
